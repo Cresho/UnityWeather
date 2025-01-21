@@ -10,7 +10,7 @@ public class WeatherAPI : MonoBehaviour
 
     private void Update()
     {
-        url = "https://api.openweathermap.org/data/2.5/weather?lat=" + CoordinatesScript.latitude + "&lon=" + CoordinatesScript.longitude + "&appid=a72867307f7150ef72a7c5aaf3280f31";
+        url = "https://api.openweathermap.org/data/2.5/weather?lat=" + CoordinatesScript.latitude + "&lon=" + CoordinatesScript.longitude + "&appid=";
         if (CoordinatesScript.valuesChanged)
         {
             StartCoroutine(GetRequest(url));
